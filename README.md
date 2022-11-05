@@ -1,4 +1,4 @@
-# Mysql Cluster 8.0.30 
+# Instalación y elaboración de un Clúster en MySQL
 _Creacion de un cluster mysql con 4 nodos y 1 administrador_
 
 ## Nodo Administrador (Macos 12)
