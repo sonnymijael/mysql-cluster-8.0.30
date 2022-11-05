@@ -1,9 +1,6 @@
 # Mysql Cluster 8.0.30 
 _Creacion de un cluster mysql con 4 nodos y 1 administrador_
 
-## Introduccion 🚀
-* [Mysql cluster](https://downloads.mysql.com/archives/cluster/)
-
 ## Nodo Administrador (Macos 12)
 #### _Vamos a preparar el nodo administrador_
  
@@ -90,6 +87,7 @@ _De no ser asi, lee el siguiente articulo [aqui](https://stackoverflow.com/quest
  * _Abrimos el cmd_
  * _Ejecutamos el comando_
   > _Remplazar la ip 192.168.0.0:1186 por la ip de su administrador_  
+  
   ```cmd
     c:\mysql\bin\ndbd -c 192.168.0.0:1186 
   ```
@@ -109,6 +107,7 @@ _De no ser asi, lee el siguiente articulo [aqui](https://stackoverflow.com/quest
  * _Abrimos otra terminal en el nodo de datos_ 
  * _Creamos el folder en el que vamos a trabajar de nombre my_cluster_
  * _Creamos el archivo [my.cnf](https://github.com/sonnymijael/mysql-cluster-8.0.30/blob/59c3b72ae436045c3ac35a4fbd3b70855002c2e5/my.cnf)_
+  
   ```sh    
    [mysqld]
    ndbcluster
@@ -129,6 +128,7 @@ _De no ser asi, lee el siguiente articulo [aqui](https://stackoverflow.com/quest
     c:\mysql\bin\mysqld --defaults-file=c:\my_cluster\my.cnf --console
   ```
   * _Estamos conectados al cluster_
+  
   ![Conectados al cluster](https://user-images.githubusercontent.com/98063818/200136674-10e2da98-2dc6-4ffc-a7a2-77d14156be57.jpeg)
   
   #### En el nodo administrador
